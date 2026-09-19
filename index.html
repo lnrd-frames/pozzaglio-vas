@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pozzaglio ed Uniti, variante al PGT e data center: l'osservazione alla VAS</title>
-<meta name="description" content="Testo integrale dell'osservazione depositata l'8 settembre 2026 nel procedimento VAS SIVAS 135620 (Comune di Pozzaglio ed Uniti) e guida per presentarne una entro il 18 settembre 2026.">
+<meta name="description" content="Testo integrale dell'osservazione depositata l'8 settembre 2026 nel procedimento VAS SIVAS 135620 (Comune di Pozzaglio ed Uniti), a che punto è il procedimento e gli aggiornamenti verificati sugli atti.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='black'/><rect x='3' y='7' width='10' height='2' fill='%239FC6E8'/></svg>">
 <style>
 @font-face{font-family:"Source Serif 4";src:url(fonts/SourceSerif4-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
@@ -46,6 +46,18 @@ a:focus-visible{outline:2px solid var(--link);outline-offset:3px}
 .deadline .date{font-weight:600;font-size:clamp(2.6rem,10vw,4.25rem);line-height:1.05;margin:.15rem 0 1rem;letter-spacing:-.01em}
 .deadline .pec{font-family:var(--mono);font-size:.95rem;overflow-wrap:anywhere}
 
+.steps{list-style:none;counter-reset:s;margin:0;padding:0}
+.steps li{counter-increment:s;position:relative;padding:1.1rem 0 1.1rem 3rem;border-top:1px solid var(--rule)}
+.steps li:last-child{border-bottom:1px solid var(--rule)}
+.steps li::before{content:counter(s);position:absolute;left:0;top:1.2rem;font-family:var(--mono);font-size:.9rem;color:var(--doc)}
+.steps p{color:var(--doc);margin:.35rem 0 0;font-size:1.05rem}
+.now{display:flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.82rem;color:var(--elab);margin:.45rem 0 .1rem}
+.now::before{content:"";width:.62rem;height:.62rem;border-radius:50%;background:var(--elab);box-shadow:0 0 0 .28rem rgba(159,198,232,.18);flex:none}
+@media (prefers-color-scheme:light){.now::before{box-shadow:0 0 0 .28rem rgba(42,100,150,.15)}}
+.ref{font-family:var(--mono);font-size:.88em}
+.hl{color:var(--elab)}
+.after-steps{margin-top:2.6rem}
+
 .doc{margin:0 0 2rem}
 .doc h3{font-weight:600;font-size:1.125rem;margin:0 0 .25rem}
 .doc p{color:var(--doc);margin:0 0 .5rem}
@@ -74,46 +86,43 @@ footer{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--rule);color:v
 
 <h1>Pozzaglio ed Uniti, variante al PGT e data center: l'osservazione alla VAS</h1>
 
-<p class="lead">L'8 settembre 2026 ho depositato al Comune di Pozzaglio ed Uniti un'osservazione formale nel procedimento di valutazione ambientale strategica sulla variante generale al PGT, <span class="mono">SIVAS 135620</span>. Qui trovi il testo integrale e una guida per presentarne una tua.</p>
+<p class="lead">L'8 settembre 2026 ho depositato al Comune di Pozzaglio ed Uniti un'osservazione formale nel procedimento di valutazione ambientale strategica sulla variante generale al PGT, <span class="mono">SIVAS 135620</span>. In questa pagina trovi gli aggiornamenti sul procedimento, il testo integrale della mia osservazione e il documentario che ho realizzato sull'argomento.</p>
 
-<p class="video"><a href="https://youtu.be/PrEa8I4OzWU">Guarda il video</a></p>
+<p class="video"><a href="https://youtu.be/PrEa8I4OzWU">Guarda il documentario</a></p>
 
-<!-- DA ATTIVARE DOMANI 19/09: sostituisci l'intera <section class="deadline"> qui sotto con questa:
 <section class="deadline" aria-labelledby="scadenza">
   <p class="until" id="scadenza">Il termine per le osservazioni è scaduto il</p>
   <p class="date">18 settembre 2026</p>
-  <p>Questa pagina resta online: qui trovi il testo integrale dell'osservazione depositata l'8 settembre e gli aggiornamenti sul procedimento, che continuo a seguire.</p>
-  <p><a href="guida-osservazione-dieci-minuti.pdf">La guida: come si presenta un'osservazione</a></p>
-</section>
--->
-<section class="deadline" aria-labelledby="scadenza">
-  <p class="until" id="scadenza">Chiunque può presentare un'osservazione fino a oggi,</p>
-  <p class="date">18 settembre 2026</p>
-  <p>Via PEC a <span class="pec">comune.pozzaglio@pec.regione.lombardia.it</span>, oppure a mano al protocollo del Comune, via Roma 37. Non serve abitare a Pozzaglio, non serve essere tecnici, non costa nulla.</p>
-  <p><a href="guida-osservazione-dieci-minuti.pdf">Leggi la guida: come presentare un'osservazione in dieci minuti</a></p>
+  <p>Questa pagina resta online: continuo a seguire il procedimento, e ogni aggiornamento indica la fonte da cui viene.</p>
 </section>
 
-<h2 id="documenti">Documenti</h2>
+<h2 id="dovesiamo">A che punto siamo</h2>
 
-<div class="doc">
-  <h3>Osservazione alla VAS, SIVAS 135620</h3>
-  <p>Testo integrale, 22 pagine. In questa versione pubblica sono oscurati luogo e data di nascita, residenza, codice fiscale e PEC personale. L'originale depositato è coperto dall'elenco di impronte trasmesso via PEC l'8 settembre 2026.</p>
-  <p class="get"><a href="osservazione-vas-135620-pubblica.pdf">Scarica l'osservazione (PDF)</a></p>
-</div>
+<p>Un intervento come questo passa per più procedimenti, in ordine. Ognuno decide una cosa diversa, e quello in corso oggi è il primo.</p>
 
-<div class="doc">
-  <h3>Come presentare un'osservazione in dieci minuti</h3>
-  <p>Guida rapida, una pagina: chi può farlo, come si invia, cosa scrivere.</p>
-  <p class="get"><a href="guida-osservazione-dieci-minuti.pdf">Scarica la guida (PDF)</a></p>
-</div>
+<p class="lead">La variante parte da tempo fa: il procedimento di redazione è avviato con la deliberazione della Giunta dell'Unione di Comuni Lombarda «Terra di Cascine» <span class="ref">n.&nbsp;22 del 10 aprile 2019</span>; la valutazione ambientale è avviata più tardi, con la deliberazione <span class="ref">n.&nbsp;70 del 13 dicembre 2021</span>.</p>
 
-<!-- Se pubblichi il dossier, copia questo blocco:
-<div class="doc">
-  <h3>Dossier</h3>
-  <p>Descrizione breve.</p>
-  <p class="get"><a href="dossier.pdf">Scarica il dossier (PDF)</a></p>
-</div>
--->
+<p>Le tre fasi del progetto:</p>
+
+<ol class="steps">
+  <li>
+    <strong>Variante al PGT e valutazione ambientale strategica (VAS)</strong>
+    <span class="now">siamo qui</span>
+    <p>Il Comune modifica il proprio piano urbanistico e decide se quella funzione è ammissibile in quell'area, e con quali prescrizioni. La proposta di variante e il Rapporto Ambientale sono stati messi a disposizione <span class="ref">dal 5 agosto al 18 settembre 2026</span>. Ora l'autorità competente, insieme all'autorità procedente, <span class="hl">esamina le osservazioni</span> ed esprime il parere motivato, che la legge prevede entro 45 giorni dalla scadenza del termine (<span class="ref">art.&nbsp;15, comma&nbsp;1, D.Lgs.&nbsp;152/2006</span>). Poi la variante torna al Consiglio comunale per l'adozione e l'approvazione.</p>
+  </li>
+  <li>
+    <strong>Procedimenti sul progetto</strong>
+    <p>Solo dopo, sul progetto vero e proprio, arrivano le valutazioni di dettaglio: valutazione di impatto ambientale (<span class="ref">VIA</span>), autorizzazione integrata ambientale (<span class="ref">AIA</span>), autorizzazioni di settore. È lì che potenza, acqua, emissioni e rumore si discutono con i numeri del progetto.</p>
+  </li>
+  <li>
+    <strong>Titoli edilizi e realizzazione</strong>
+    <p>Infine i permessi di costruire e i cantieri.</p>
+  </li>
+</ol>
+
+<p class="after-steps">La conformità urbanistica è il presupposto dei passaggi successivi quindi senza il progetto non procede. Per questo le prescrizioni si scrivono adesso, nella scheda dell'ambito, dove diventano opponibili. Le fasi successive discutono <em>come</em> realizzare una funzione che il piano ha già ammesso, non <em>se</em> ammetterla.</p>
+
+<p>È il motivo dell'osservazione che ho depositato: il fascicolo della valutazione non contiene dati di potenza, non contiene una stima dei consumi idrici, la tecnologia di raffreddamento non è ancora scelta, nessun elaborato dichiara la quantità di combustibile stoccata e la valutazione previsionale di impatto acustico è rinviata alla fase attuativa. Quei dati arriveranno, ma in una fase in cui l'ammissibilità è già decisa.</p>
 
 <h2 id="aggiornamenti">Aggiornamenti</h2>
 
@@ -121,12 +130,16 @@ footer{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--rule);color:v
   <!-- Il più recente in cima. Esempio:
   <li><time datetime="2026-09-19">19 set 2026</time><div>…</div></li>
   -->
-  <!-- DA ATTIVARE DOMANI 19/09 (togli questa riga di commento e quella in fondo al blocco):
+  <li>
+    <time datetime="2026-09-19">19 set 2026</time>
+    <div class="mine">Controllo ripetuto: non risultano pubblicati né il verbale della IIª Conferenza di Valutazione, né le deliberazioni del Consiglio comunale del 16 settembre, né le osservazioni pervenute. Nessun atto nuovo.
+      <span class="where">Cercato in: portale SIVAS, scheda del procedimento e sezioni conferenze, parere e osservazioni; albo pretorio del Comune, pubblicazioni correnti e storiche; albo della Provincia; BURL.</span>
+    </div>
+  </li>
   <li>
     <time datetime="2026-09-18">18 set 2026</time>
-    <div>Termine per la presentazione delle osservazioni: scaduto.</div>
+    <div>Termine per la presentazione delle osservazioni: scaduto. La messa a disposizione è durata 45 giorni, dal 5 agosto al 18 settembre 2026.</div>
   </li>
-  -->
   <li>
     <time datetime="2026-09-18">18 set 2026</time>
     <div class="mine">Verifica ripetuta: la deliberazione prevista dall'art.&nbsp;5, comma&nbsp;10, della L.R.&nbsp;11/2026 non risulta ancora pubblicata. Letto integralmente l'ordine del giorno della seduta di Giunta del 14 settembre: nessuna delle 43 deliberazioni attua la legge.
@@ -153,7 +166,37 @@ footer{margin-top:4rem;padding-top:1rem;border-top:1px solid var(--rule);color:v
     <time datetime="2026-09-08">8 set 2026</time>
     <div>Osservazione depositata al Comune di Pozzaglio ed Uniti.</div>
   </li>
+  <li>
+    <time datetime="2026-07-31">31 lug 2026</time>
+    <div>Il Consiglio comunale di Persico Dosimo tratta una mozione sull'insediamento del data center a Pozzaglio ed Uniti (deliberazione n.&nbsp;32 del 31 luglio 2026, pubblicata all'albo dal 3 al 18 agosto). Il testo della deliberazione non è disponibile online, quindi non ne riporto qui il contenuto né l'esito.</div>
+  </li>
+  <li>
+    <time datetime="2026-07-28">28 lug 2026</time>
+    <div>I Consigli comunali di Corte de' Frati e Olmeneta approvano ciascuno all'unanimità una mozione sul procedimento (D.C.C. 21 e D.C.C. 14, entrambe del 28 luglio 2026): chiedono che la valutazione ambientale giunga a compimento e che la valutazione di impatto ambientale sia svolta, e richiamano il plesso scolastico di Brazzuoli.</div>
+  </li>
 </ol>
+
+<h2 id="documenti">Documenti</h2>
+
+<div class="doc">
+  <h3>Osservazione alla VAS, SIVAS 135620</h3>
+  <p>Testo integrale, 22 pagine. In questa versione pubblica sono oscurati luogo e data di nascita, residenza, codice fiscale e PEC personale. L'originale depositato è coperto dall'elenco di impronte trasmesso via PEC l'8 settembre 2026.</p>
+  <p class="get"><a href="osservazione-vas-135620-pubblica.pdf">Scarica l'osservazione (PDF)</a></p>
+</div>
+
+<div class="doc">
+  <h3>Come presentare un'osservazione in dieci minuti</h3>
+  <p>Guida rapida, una pagina: chi può farlo, come si invia, cosa scrivere. Il termine di questo procedimento è scaduto, ma il metodo vale per qualsiasi altra consultazione.</p>
+  <p class="get"><a href="guida-osservazione-dieci-minuti.pdf">Scarica la guida (PDF)</a></p>
+</div>
+
+<!-- Se pubblichi il dossier, copia questo blocco:
+<div class="doc">
+  <h3>Dossier</h3>
+  <p>Descrizione breve.</p>
+  <p class="get"><a href="dossier.pdf">Scarica il dossier (PDF)</a></p>
+</div>
+-->
 
 <h2 id="impronte">Controllare che i file siano integri</h2>
 <p>Ogni file ha un'impronta SHA-256: se il file che hai scaricato dà la stessa sequenza, è identico a quello pubblicato qui. L'elenco è anche in <a href="SHA256SUMS.txt">SHA256SUMS.txt</a>.</p>
